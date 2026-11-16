@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /#admin
+
+# Crawl-delay for optimal server performance
+Crawl-delay: 1
+
+# XML Sitemap Location
+Sitemap: https://theroyalweddingphotography.com/sitemap.xml
+
+# Machine-Readable LLM & AI Agent Context
+# https://llmstxt.org/
+llms: https://theroyalweddingphotography.com/llms.txt

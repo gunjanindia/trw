@@ -1,0 +1,32 @@
+# Global Security & Performance Headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self)
+
+# Static Asset Long-Term Cache Headers for Netlify & Cloudflare Pages
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static Brand Emblems & Manifest
+/crown-gold.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/crown-dark.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/logo-dual.png
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+/site.webmanifest
+  Cache-Control: public, max-age=86400
+
+# Agentic Browsing Context Files
+/llms.txt
+  Cache-Control: public, max-age=86400, stale-while-revalidate=43200
+  Content-Type: text/plain; charset=utf-8
+/.well-known/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=43200
+  Content-Type: application/json; charset=utf-8
+
+# HTML Entry point: Always validate for fresh deploys
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate

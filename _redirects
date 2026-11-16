@@ -1,0 +1,15 @@
+# =========================================================================
+# The Royal Wedding Photography - Canonical Redirection & SPA Fallback Rules
+# Official Production Domain: https://theroyalweddingphotography.com
+# =========================================================================
+
+# 1. Canonical Domain Redirections: www -> non-www (301 Permanent)
+http://www.theroyalweddingphotography.com/*   https://theroyalweddingphotography.com/:splat   301!
+https://www.theroyalweddingphotography.com/*  https://theroyalweddingphotography.com/:splat   301!
+http://theroyalweddingphotography.com/*       https://theroyalweddingphotography.com/:splat   301!
+
+# 2. Netlify Production Subdomain to Official Custom Domain (301 Permanent)
+https://the-royal-wedding.netlify.app/*       https://theroyalweddingphotography.com/:splat   301!
+
+# 3. SPA Client-Side Routing Fallback (Must be last)
+/*    /index.html   200

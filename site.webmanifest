@@ -1,0 +1,26 @@
+{
+  "name": "The Royal Wedding Photography",
+  "short_name": "Royal Wedding",
+  "description": "Story of Love Beautifully Preserve. Luxury Wedding Photography, 4K Cinematography, Panoramic Album Designing & AI Delivery in Dhanbad, Jharkhand.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E0E0E",
+  "theme_color": "#C9A96A",
+  "icons": [
+    {
+      "src": "/crown-gold.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/crown-gold.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    }
+  ]
+}

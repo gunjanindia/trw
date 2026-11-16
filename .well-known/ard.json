@@ -1,0 +1,68 @@
+{
+  "$schema": "https://agent-ready.dev/schema/v1/ard.json",
+  "name": "The Royal Wedding Photography Agent Resource Discovery",
+  "version": "1.0.0",
+  "site_url": "https://theroyalweddingphotography.com",
+  "organization": {
+    "name": "The Royal Wedding Photography",
+    "founder": "Naresh Kumar",
+    "telephone": "+918340469107",
+    "email": "hello@theroyalweddingphotography.com",
+    "address": {
+      "streetAddress": "Near Denobili School CMRI Parking, Jay Prakash Nagar, CIMFR Colony",
+      "addressLocality": "Dhanbad",
+      "addressRegion": "Jharkhand",
+      "postalCode": "826007",
+      "addressCountry": "IN"
+    }
+  },
+  "actions": [
+    {
+      "id": "check_availability",
+      "name": "Check Wedding Date Availability",
+      "description": "Verifies whether The Royal Wedding Photography crew is available for a given wedding date and venue in Jharkhand, Bihar, or West Bengal.",
+      "url": "https://theroyalweddingphotography.com/#/check-availability",
+      "method": "GET",
+      "parameters": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Target wedding ceremony date"
+        },
+        "venue": {
+          "type": "string",
+          "description": "Wedding venue or city"
+        }
+      }
+    },
+    {
+      "id": "get_quote",
+      "name": "Calculate Custom Wedding Package Quote",
+      "description": "Calculates estimated quotation for photography, cinema, drone coverage, and 12x36 luxury albums.",
+      "url": "https://theroyalweddingphotography.com/#/get-a-quote",
+      "method": "GET"
+    },
+    {
+      "id": "whatsapp_consultation",
+      "name": "WhatsApp Direct Studio Consultation",
+      "description": "Direct communication channel with Director Naresh Kumar via WhatsApp.",
+      "url": "https://wa.me/918340469107",
+      "method": "GET"
+    },
+    {
+      "id": "explore_portfolio",
+      "name": "Explore Real Wedding Portfolio",
+      "description": "Browse real Indian wedding photographs, pre-wedding albums, and 4K film trailers.",
+      "url": "https://theroyalweddingphotography.com/#/wedding-photography",
+      "method": "GET"
+    },
+    {
+      "id": "lumera_kids_studio",
+      "name": "LUMÉRA Fine Art Children's Photography",
+      "description": "Exclusive division of The Royal Weddings specializing in Newborn Photography, Milestone Baby Photography, Kids Couture Portraits, 1st Birthday Cake Smash, and Generational Family Moments.",
+      "url": "https://theroyalweddingphotography.com/#/lumera-kids",
+      "method": "GET"
+    }
+  ],
+  "llms_context_url": "https://theroyalweddingphotography.com/llms.txt"
+}
