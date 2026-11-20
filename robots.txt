@@ -9,6 +9,6 @@ Crawl-delay: 1
 # XML Sitemap Location
 Sitemap: https://theroyalweddingphotography.com/sitemap.xml
 
-# Machine-Readable LLM & AI Agent Context
+# Machine-Readable LLM & AI Agent Context (RFC 9309 Compliant)
 # https://llmstxt.org/
-llms: https://theroyalweddingphotography.com/llms.txt
+# LLM Context: https://theroyalweddingphotography.com/llms.txt

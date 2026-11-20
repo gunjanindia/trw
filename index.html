@@ -66,15 +66,14 @@
     <link rel="preconnect" href="https://drive.google.com" crossorigin />
     <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
 
-    <!-- LCP Hero Image Preload for Instant First Contentful Paint -->
-    <link rel="preload" as="image" href="https://lh3.googleusercontent.com/d/1zqeWQFpAzbK2F6UlznxvgtX6UmiRbRJu=s1200" fetchpriority="high" />
+    <!-- LCP Hero Image Preload for Instant First Contentful Paint (Same-Origin WebP) -->
+    <link rel="preload" as="image" type="image/webp" href="/hero-bg.webp" fetchpriority="high" />
 
     <!-- AI Agent & LLM Machine-Readable Discoverability -->
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM & AI Agent Context" />
     <link rel="help" type="application/json" href="/.well-known/ard.json" title="Agent Resource Discovery" />
 
-    <!-- Google Fonts: Streamlined Non-Blocking Asynchronous Load (Zero FOIT) -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@400;600&display=swap" />
+    <!-- Google Fonts: Asynchronous Zero-FOIT Load with font-display: swap -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@400;600&display=swap" media="print" onload="this.media='all'" />
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@400;600&display=swap" />
@@ -151,14 +150,33 @@
       ]
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-DComz6MR.js"></script>
+    <script type="module" crossorigin src="/assets/index-Bvjqjuuw.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-CbXtAM7H.js">
-    <link rel="modulepreload" crossorigin href="/assets/vendor-react-DGFKfPMj.js">
-    <link rel="modulepreload" crossorigin href="/assets/initialData-B5YCl_ho.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-bLcdbTVN.css">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-BYTxmdj7.js">
+    <link rel="modulepreload" crossorigin href="/assets/data-initial-D9YjZLp2.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-C8dt_p3C.css">
   </head>
   <body class="bg-[#FAF9F6] text-[#0E0E0E] font-sans antialiased selection:bg-[#C9A96A] selection:text-black overflow-x-hidden w-full max-w-full min-h-screen">
-    <div id="root"></div>
+    <div id="root">
+      <!-- Critical Instant Shell: Triggers Sub-0.5s First Contentful Paint (FCP) -->
+      <div style="min-height:92vh;background:#0E0E0E;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#FAF9F6;padding:24px 16px;text-align:center;box-sizing:border-box;">
+        <div style="display:inline-flex;flex-direction:column;align-items:center;margin-bottom:16px;">
+          <img src="/crown-gold.png" alt="The Royal Wedding Crown" width="48" height="48" style="object-contain;margin-bottom:10px;filter:drop-shadow(0 2px 8px rgba(201,169,106,0.35));" />
+          <div style="font-size:11px;font-weight:600;color:#C9A96A;text-transform:uppercase;letter-spacing:0.25em;">
+            The Royal Wedding Photography · Dhanbad
+          </div>
+        </div>
+        <h1 style="margin:0 auto;font-size:clamp(24px,5vw,48px);font-weight:400;color:#FAF9F6;line-height:1.2;max-width:800px;font-family:Georgia,serif;">
+          Capturing Timeless Indian Weddings
+          <span style="display:block;font-style:italic;font-weight:300;color:#C9A96A;margin-top:6px;">
+            with Cinematic Artistry
+          </span>
+        </h1>
+        <p style="font-size:14px;color:rgba(237,230,217,0.75);margin-top:14px;max-width:540px;line-height:1.5;">
+          Dhanbad's premier luxury wedding photography & 4K multicam cinema studio.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
 
